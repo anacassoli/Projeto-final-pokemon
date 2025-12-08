@@ -43,13 +43,13 @@ function createCardHTML(data) {
   const def = stats["defense"] || 0;
 
   const mainType = data.types[0].type.name;
-  const color = typeColors[mainType] || "#777";
+  const color = typeColors[mainType] || "#a0c0e4";
 
   // TIPOS EM HTML
   const typesHtml = data.types
     .map((t) => {
       const tName = t.type.name;
-      const tColor = typeColors[tName] || "#777";
+      const tColor = typeColors[tName] || "#a0c0e4";
       return `<span class="type-badge" style="background-color: ${tColor}">${tName}</span>`;
     })
     .join("");
