@@ -1,7 +1,7 @@
 const dragao = document.getElementById("dragao");
 
 const typeColors = {
-    dragon: "#7038F8", // roxo clássico do tipo dragão
+    dragon: "#e23f3fff", // roxo clássico do tipo dragão
 };
 
 // BUSCA POKÉMON
@@ -41,13 +41,13 @@ function createCardHTML(data) {
     const def = stats.defense || 0;
 
     const mainType = data.types[0].type.name; 
-    const color = typeColors[mainType] || "#a98ff3";
+    const color = typeColors[mainType] || "#e23f3fff";
 
     // TIPOS EM HTML
     const typesHtml = data.types
         .map(t => {
             const tName = t.type.name;
-            const tColor = typeColors[tName] || "#a98ff3";
+            const tColor = typeColors[tName] || "#f8a0a0ff";
             return `
                 <span class="type-badge" style="background-color:${tColor}">
                     ${tName}
@@ -113,7 +113,7 @@ function createCardHTML(data) {
 (async function init() { 
   await fetchAndCreateCard("dragonite"); 
   await fetchAndCreateCard("garchomp"); 
-  await fetchAndCreateCard("giratina"); 
+  await fetchAndCreateCard("kingdra"); 
   await fetchAndCreateCard("dialga"); 
   await fetchAndCreateCard("palkia"); 
   await fetchAndCreateCard("latias"); 
@@ -122,5 +122,6 @@ function createCardHTML(data) {
   await fetchAndCreateCard("shelgon"); 
   await fetchAndCreateCard("deino"); 
   await fetchAndCreateCard("tyrantrum"); 
-  await fetchAndCreateCard("zygarde"); 
+  await fetchAndCreateCard("dratini"); 
+
 })();
