@@ -10,10 +10,27 @@
 
 body {
     background: #040445;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(0, 22, 96);
     padding: 20px;
 }
 
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
 
+nav p{
+    color: rgb(174, 173, 173);
+}
 
 /* ============================
    GRIDS DAS POKÉDEX
@@ -44,6 +61,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 18px 18px 0 0;
 }
 
 .poke-img {
