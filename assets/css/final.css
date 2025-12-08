@@ -67,3 +67,83 @@ nav p{
     line-height: 1.45;
     text-align: center;
 }
+
+/*layout*/
+
+@media (min-width: 1025px) {
+    .card-area {
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-box {
+        width: 70%;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .navbar {
+        gap: 40px;
+        font-size: 20px;
+    }
+
+    .navbar .back {
+        font-size: 22px;
+        left: 20px;
+    }
+
+    .card-area {
+        gap: 40px;
+    }
+
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .text-box {
+        width: 85%;
+        font-size: 20px;
+        padding: 25px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        font-size: 18px;
+        gap: 15px;
+        padding: 15px 0;
+        flex-wrap: wrap; /* Caso o menu fique grande */
+    }
+
+    .navbar .back {
+        font-size: 20px;
+        opacity: 0.6;
+        left: 15px;
+        top: 18px;
+    }
+
+    .card-area {
+        flex-direction: column; /* Cartões ficam empilhados */
+        gap: 25px;
+    }
+
+    .card {
+        width: 85%;
+        height: 250px;
+    }
+
+    .text-box {
+        width: 90%;
+        font-size: 18px;
+        padding: 20px 25px;
+    }
+}

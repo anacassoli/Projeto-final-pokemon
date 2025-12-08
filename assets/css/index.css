@@ -63,3 +63,82 @@ nav a {
 .pokemon {
     width: 350px;
 }
+
+/*layout*/
+
+@media (min-width: 1025px) {
+    .card {
+        width: 600px;
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+
+    .imagens {
+        top: 130px;
+        right: 260px;
+    }
+
+    .logo {
+        width: 420px;
+    }
+
+    .pokemon {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    nav {
+        gap: 40px;
+        font-size: 18px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 50px auto;
+        font-size: 22px;
+    }
+
+    .imagens {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .logo {
+        width: 350px;
+    }
+
+    .pokemon {
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 30px auto;
+        padding: 25px 20px;
+        font-size: 20px;
+    }
+
+    .imagens {
+        position: static;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .pokemon {
+        width: 220px;
+    }
+}
+
