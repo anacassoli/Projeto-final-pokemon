@@ -1,0 +1,94 @@
+/* ============================
+   CONFIGURAÇÃO GLOBAL
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1b1b1b;
+    padding: 20px;
+}
+
+
+/* ============================
+   GRIDS DAS POKÉDEX
+============================ */
+.pokedex-grid,
+.pokedex-dragao,
+.pokedex-escuro,
+.pokedex-voar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* ============================
+   CARD BASE
+============================ */
+.pokemon-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.06);
+}
+
+
+/* ============================
+   HEADER DO CARD
+============================ */
+.card-header {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poke-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+.tipopoke{
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.infopoke {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+
+
+
+
