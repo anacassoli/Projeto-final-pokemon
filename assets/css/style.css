@@ -1,7 +1,5 @@
-/* ============================
-   CONFIGURAÇÃO GLOBAL
-============================ */
-* {
+
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,9 +12,6 @@ body {
 }
 
 
-/* ============================
-   GRIDS DAS POKÉDEX
-============================ */
 .pokedex-grid,
 .pokedex-dragao,
 .pokedex-escuro,
@@ -28,11 +23,9 @@ body {
 }
 
 
-/* ============================
-   CARD BASE
-============================ */
+
 .pokemon-card {
-    background: #ffffff;
+    background: #ff0000;
     border-radius: 18px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     overflow: hidden;
