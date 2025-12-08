@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: #00396d;
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+}
+
+.navbar {
+    background-color: #002b52;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;  /* Centraliza os itens do menu */
+    align-items: center;
+    gap: 60px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar .back {
+    position: absolute;
+    left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+nav p{
+    color: rgb(174, 173, 173);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.card-area {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.text-box {
+    width: 70%;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 30px 40px;
+    border-radius: 30px;
+    font-size: 22px;
+    line-height: 1.45;
+    text-align: center;
+}
