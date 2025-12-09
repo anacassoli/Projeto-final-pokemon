@@ -1,10 +1,16 @@
+/* ===== CONFIGURAÇÃO GLOBAL ===== */
 body {
     margin: 0;
     background-color: #00396d;
     font-family: "Segoe UI", sans-serif;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* permite o footer ir para o fim */
 }
 
+/* ===== HEADER SUPERIOR ===== */
 .top-header {
     width: 100%;
     background-color: rgb(255, 217, 0);
@@ -19,6 +25,7 @@ body {
     font-weight: 600;
 }
 
+/* ===== NAVBAR ===== */
 .navbar {
     background-color: #002b52;
     padding: 20px 0;
@@ -45,33 +52,28 @@ body {
     color: white;
 }
 
-nav p {
-    color: rgb(174, 173, 173);
-}
-
+/* ===== ÁREA PRINCIPAL ===== */
 .container {
+    flex: 1; /* empurra o footer para baixo */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
 }
 
+/* ===== CARDS (IMAGENS) ===== */
 .card-area {
+    width: 100%;
+    max-width: 900px;
     display: flex;
-    gap: 80px;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    gap: 40px; /* distância entre as fotos */
 }
 
-.card {
-    width: 300px;
-    height: 300px;
-    background-color: #ffffff;
-    border-radius: 6px;
-}
-
+/* ===== TEXTO ===== */
 .text-box {
-    width: 70%;
+    width: 80%;
     max-width: 900px;
     background-color: rgba(0, 0, 0, 0.25);
     padding: 30px 40px;
@@ -79,15 +81,17 @@ nav p {
     font-size: 22px;
     line-height: 1.45;
     text-align: center;
+    margin-top: 40px;
 }
 
+/* ===== FOOTER ===== */
 .footer {
     background-color: #ffe100;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding: 20px 10px;
-    margin-top: 40px;
+    padding: 20px 100%;
     font-size: 14px;
+
 }
 
 .footer p {
@@ -95,73 +99,22 @@ nav p {
 }
 
 /* ===== RESPONSIVIDADE ===== */
-@media (min-width: 1025px) {
-    .card-area {
-        flex-direction: row;
-        gap: 80px;
-    }
-
-    .card {
-        width: 300px;
-        height: 300px;
-    }
-
-    .text-box {
-        width: 70%;
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 1024px) and (min-width: 768px) {
-    .navbar {
-        gap: 40px;
-        font-size: 20px;
-    }
-
-    .navbar .back {
-        font-size: 22px;
-        left: 20px;
-    }
-
-    .card-area {
-        gap: 40px;
-    }
-
-    .card {
-        width: 250px;
-        height: 250px;
-    }
-
-    .text-box {
-        width: 85%;
-        font-size: 20px;
-        padding: 25px 30px;
-    }
-}
-
 @media (max-width: 767px) {
     .navbar {
         font-size: 18px;
-        gap: 15px;
+        gap: 20px;
         padding: 15px 0;
-        flex-wrap: wrap;
     }
 
     .navbar .back {
         font-size: 20px;
-        opacity: 0.6;
         left: 15px;
         top: 18px;
     }
 
-    .card-area {
-        flex-direction: column;
-        gap: 25px;
-    }
-
     .card {
-        width: 85%;
-        height: 250px;
+        width: 45%;
+        height: 200px;
     }
 
     .text-box {
