@@ -48,14 +48,18 @@ nav p{
 /* ============================
    GRIDS DAS POKÉDEX
 ============================ */
+
 .pokedex-grid,
 .pokedex-dragao,
 .pokedex-escuro,
 .pokedex-voar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    justify-content: center; /* Centraliza os cards */
 }
 
 
@@ -65,6 +69,9 @@ nav p{
 .pokemon-card {
     background: #ffffff;
     border-radius: 18px;
+    width: 220px; /* Largura equivalente ao grid */
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -123,6 +130,7 @@ nav p{
 
 /*layout*/
 
+/* DESKTOP */
 @media (min-width: 1025px) {
     nav {
         font-size: 20px;
@@ -134,6 +142,9 @@ nav p{
     .pokedex-escuro,
     .pokedex-voar {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+    .pokemon-card {
+        width: 220px;
     }
 
     .poke-img {
@@ -142,6 +153,7 @@ nav p{
     }
 }
 
+/* TABLET */
 @media (max-width: 1024px) and (min-width: 768px) {
 
     nav {
@@ -155,6 +167,8 @@ nav p{
     .pokedex-voar {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 15px;
+    .pokemon-card {
+        width: 180px;
     }
 
     .poke-img {
@@ -167,10 +181,12 @@ nav p{
     }
 }
 
+/* CELULAR */
 @media (max-width: 767px) {
 
     nav {
         flex-direction: column; /* Empilha o menu */
+        flex-direction: column;
         gap: 15px;
         font-size: 18px;
         padding: 15px;
@@ -186,6 +202,7 @@ nav p{
     }
 
     .pokemon-card {
+        width: 150px;
         border-radius: 15px;
     }
 
@@ -208,4 +225,5 @@ nav p{
         gap: 6px;
         text-align: center;
     }
+}
 }
