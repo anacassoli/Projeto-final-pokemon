@@ -1,3 +1,6 @@
+/* ============================
+   CONFIGURAÇÃO GLOBAL
+============================ */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,19 @@
 
 body {
     background: #040445;
+}
+
+.top-header {
+    width: 100%;
+    background-color: rgb(255, 217, 0);
+    padding: 25px 0;
+    text-align: center;
+    color: #003366;
+}
+.top-header p {
+    margin: 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 nav {
@@ -43,8 +59,9 @@ nav p{
 }
 
 
-/* CARD BASE */
-
+/* ============================
+   CARD BASE
+============================ */
 .pokemon-card {
     background: #ffffff;
     border-radius: 18px;
@@ -89,6 +106,20 @@ nav p{
     justify-content: space-between;
     margin-top: 10px;
 }
+
+.footer {
+    background-color: #ffe100;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
 
 /*layout*/
 
