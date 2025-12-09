@@ -1,6 +1,3 @@
-/* ============================
-   CONFIGURAÇÃO GLOBAL
-============================ */
 * {
     margin: 0;
     padding: 0;
@@ -46,9 +43,8 @@ nav p{
 }
 
 
-/* ============================
-   CARD BASE
-============================ */
+/* CARD BASE */
+
 .pokemon-card {
     background: #ffffff;
     border-radius: 18px;
