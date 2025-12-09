@@ -12,18 +12,18 @@ body {
     text-align: center;
     color: #003366;
 }
+
 .top-header p {
     margin: 5px 0 0;
     font-size: 20px;
     font-weight: 600;
 }
 
-
 .navbar {
     background-color: #002b52;
     padding: 20px 0;
     display: flex;
-    justify-content: center;  /* Centraliza os itens do menu */
+    justify-content: center;
     align-items: center;
     gap: 60px;
     font-size: 22px;
@@ -45,10 +45,9 @@ body {
     color: white;
 }
 
-nav p{
+nav p {
     color: rgb(174, 173, 173);
 }
-
 
 .container {
     display: flex;
@@ -84,7 +83,7 @@ nav p{
 
 .footer {
     background-color: #ffe100;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     padding: 20px 10px;
     margin-top: 40px;
@@ -95,9 +94,7 @@ nav p{
     margin: 5px 0;
 }
 
-
-/*layout*/
-
+/* ===== RESPONSIVIDADE ===== */
 @media (min-width: 1025px) {
     .card-area {
         flex-direction: row;
@@ -116,7 +113,6 @@ nav p{
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-
     .navbar {
         gap: 40px;
         font-size: 20px;
@@ -144,12 +140,11 @@ nav p{
 }
 
 @media (max-width: 767px) {
-
     .navbar {
         font-size: 18px;
         gap: 15px;
         padding: 15px 0;
-        flex-wrap: wrap; /* Caso o menu fique grande */
+        flex-wrap: wrap;
     }
 
     .navbar .back {
@@ -160,7 +155,7 @@ nav p{
     }
 
     .card-area {
-        flex-direction: column; /* Cartões ficam empilhados */
+        flex-direction: column;
         gap: 25px;
     }
 
